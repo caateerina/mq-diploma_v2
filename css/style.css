@@ -1,0 +1,748 @@
+@font-face {
+    font-family:'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+		url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+		url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px; 
+    line-height: 1.25;
+}
+  
+body {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400; 
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+h1, h2, h3,
+.header_logo_text,
+.footer_text {
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*---------header*/
+
+.header {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+    min-height: 960px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+	background-image: url('../images/header_1920.png');
+	padding-top: 45px;
+	padding-bottom: 110px;
+	background-color: #0a0e34;
+	
+}
+
+.header_logo_box {
+    width: 190px;
+}
+
+.logotype_text_container {
+    width: 100%; 
+	max-width: 81.5%;
+	line-height: 1;
+    font-size: 6.4286rem;
+	font-weight: 700;
+	position: relative;
+    top: 35px;
+}
+
+.buttons_header {
+    display: flex;
+}
+
+.button {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	position: relative;
+    font-size: 14px;
+    border-radius: 35px;
+    background-color: #5e42b0;
+    text-align: center;
+	
+    width: 310px;
+    height: 75px;
+    padding: 30px 25px 30px 110px;
+   
+}
+
+.button strong {
+    font-weight: 700;
+}
+
+.button span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button_google span {
+   padding-left: 20px;
+}
+
+.button_apple {
+    margin-right: 50px;
+}
+
+.button_apple::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    width: 47px;
+    height: 50px;
+    left: 35px;
+    background: url("../icons/apple_logo.svg") no-repeat 0 0;
+}
+
+.button_google::before {
+    content: "";
+	position: absolute;
+    top: 22%;
+    width: 45px;
+    height: 50px;
+    left: 55px;
+    background: url("../icons/google_play.svg") no-repeat 0 0;
+
+}
+
+/*---------athlets*/
+
+.athlets_header_wrap {
+	max-width: 1520px;
+	margin: auto;
+}
+
+.athlets_block_wrap {
+	max-width: 1320px;
+	margin: auto;
+}
+
+.athlets_block_atom {
+	max-width: 620px;
+	margin-left: auto;
+}
+
+.players_block_wrap {
+	max-width: 1550px;
+	margin: auto;
+}
+
+.players_block_atom {
+	max-width: 620px;
+	margin-right: auto;
+}
+
+.athlets, .players {
+    position: relative;
+	min-height: 760px;
+}
+
+.athlets_img, .players_img {
+    position: absolute;
+    top: 0;
+}
+
+.athlets_img {
+    left: 21%;
+    top: -5.8%;
+	width: 560px;
+}
+
+.big_block {
+    font-weight: 700;
+    font-size: 8rem;
+    color: #e7e7e7;
+    font-size: 80px; 
+}
+
+.number_box {
+	display: inline-block;
+    font-weight: 700;
+    font-size: 1.2857rem;
+    border-bottom: 4px solid #5e42b0;
+    width: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    line-height: 1.6;
+}
+
+.big_block_activity {
+     color: #c1c1c1;
+     font-size: 80px;
+     opacity: 0.4;
+}
+
+.middle_block {
+	display: inline-block;
+    color: #c1c1c1;
+    font-weight: 700;
+    font-size: 2.5714rem;
+}
+
+.text_block_third {
+    color: #ffffff;
+}
+
+.athlets_block_2 {
+    background-color: #f6f4fa;
+}
+
+.athlets_block_3 {
+    background-color: #5e42b0;
+}
+
+.athlets_block_3 .number_box {
+    border-bottom: 4px solid #ffffff;
+}
+
+.players_box_2 {
+    background-color: #f5f6f7;
+}
+
+.players_box-3 {
+    background-color: #0a0e34;
+}
+
+.players_box-3 .number_box {
+    color: #684fb3;
+    border-bottom: 4px solid #ffffff;
+    border-radius: 2px;
+}
+
+.players_box {
+    width: 100%;
+}
+
+.players_container {
+    width: 100%;
+}
+
+/*---------actions*/
+
+.activity_block {
+    display: flex;
+    width: 100%;
+}
+
+.activity_container {
+    position: relative;
+}
+
+.activity_container,
+.activity_text_block {
+    flex-basis: 50%;
+    font-size: 0;
+}
+
+.activity_number_box {
+	display: flex;
+    position: absolute;
+    background-color: #5e42b0;
+    text-align: center;
+}
+
+.activity_number_box_inner {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    margin: auto;
+    border-bottom: 4px solid #8f7bc8;
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+/*---------footer*/
+
+.footer {
+    width: 100%;
+    min-height: 950px;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-color: #0a0e34;
+    color: #fffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_title {
+    font-size: 5.7143rem;
+    color: #fff;
+}
+
+.footer_container {
+    position: relative;
+}
+
+.footer_container::before {
+    content: url("../icons/surface_logo.svg");
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #6d4dc7;
+}
+
+.footer_text {
+    color: #a496ca;
+}
+
+/*---------mobile*/
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url('../images/header_320.jpg');
+    }
+
+    .header_logo_box {
+        width: 133px;
+    }
+    
+    .header_logo_text {
+       
+    }
+
+    .logotype_text_container {
+        width: 87.5%;
+    }
+
+    .header_logo_text_1 {
+        margin-bottom: 3.5vh;
+    }
+    
+    .button {
+        font-size: 0.8rem;
+        width: 100%;
+        height: 35px;
+        padding: 0px;
+        padding-left: 40%;
+    }
+
+    .button_apple::before {
+        top: 24%;
+        width: 20px;
+        height: 24px;
+        left: 30%;
+    }
+
+    .button_google::before {
+        top: 24%);
+        width: 22px;
+        height: 24px;
+        left: 30%;
+    }
+
+    .header {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .buttons_header {
+        display: block;
+        width: 87.5%;
+    }
+
+    .button_apple {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .middle_block {
+        font-size: 2.8rem;
+        margin-top: 52px;
+        margin-bottom: 28px;
+    }
+
+    .big_block {
+        font-size: 2.8rem;
+    }
+
+    .athlets_header,
+    .players_header,
+    .athlets_block,
+    .players_box {
+        padding: 0 6%;
+    }
+
+    .athlets_img, .players_img {
+        position: static;
+        top: 0;
+    }
+
+    .athlets_img img, 
+    .players_img img{
+        display: block;
+        margin: auto;
+    }
+
+    .number_box {
+        margin-right: 3px;
+        line-height: 1.5;
+    }
+
+    .big_block{
+        margin-top: 11.25px;
+    }
+
+    .activity_text_block .big_block{
+        margin-top: 27.5px;
+        margin-bottom: 16px;
+    }
+
+    .activity_block .big_block,
+    .activity_block .text_block {
+        margin-left: 6.25%;
+        margin-right: 6.25%;
+    }
+
+    .activity_block .text_block {
+        margin-bottom: 73.5px;
+    }
+
+    .activity_block {
+        display: block;
+        width: 100%;
+    }
+    
+    .activity_img,
+    .activity_img img,
+    .activity_text_block {
+        width: 100%;
+    }
+
+    .activity_number_box {
+        width: 70px;
+        height: 70px;
+        bottom: -4%;
+        left: 6.25%;
+    }
+
+    .activity_number_box_inner {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer_title {
+        font-size: 3.2rem;
+    }
+
+    .header_logo_text_2 {
+        margin-left: 20%;
+    }
+
+    .athlets .text_block,
+    .players .text_block {
+        font-size: 1.5rem;
+        padding-bottom: 50px;
+        line-height: 1.2;
+    }
+
+    .text_block {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .footer {
+        background-image: url('../images/footer_320.jpg');
+        padding-top: 65%;
+        padding-bottom: 5%;
+    }
+
+    .footer_container::before {
+        bottom: 108px;
+        left: 39%;
+        width: 72px;
+        padding: 10px 7px 4px;
+        border-radius: 15px;
+    }
+
+    .footer_text {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+/*---------tablet*/
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .header {
+        
+    }
+
+    .header_logo_text {
+        
+    }
+
+    .header_logo_box {
+        width: 205px;
+    }
+
+    .header_logo_text_1 {
+        margin-left: 12%;
+    }
+
+    .header_logo_text-2 {
+        
+    }
+
+    .activity_block {
+        display: block;
+        width: 100%;
+    }
+    
+    .activity_img,
+    .activity_img img,
+    .activity_text_block {
+        width: 100%;
+    }
+
+    .activity_number_box {
+        width: 115px;
+        height: 115px;
+        left: 4%;
+        bottom: -4%;
+    }
+
+    .activity_block .big_block,
+    .activity_block .text_block {
+        margin-left: 4%;
+    }
+
+    .activity_text_block .big_block {
+        line-height: 1;
+        margin-top: 86px;
+        margin-bottom: 16px;
+    }
+
+    .activity_text_block .text_block {
+        max-width: 85.9%;
+        margin-bottom: 86px;
+    }
+
+    .players .big_block,
+    .athlets .big_block {
+        margin-top: 65px;
+        font-size: 8rem;
+    }
+
+    .activity_block .big_block {
+        font-size: 8rem;
+    }
+
+    .athlets_img {
+        top: 95px;
+        left: 0;
+    }
+
+    .button_apple {
+        margin-right: 30px;
+    }
+
+    .athlets_block,
+    .athlets_header {
+        padding-left: 38%;
+        padding-right: 5%;
+    }
+
+    .players_box,
+    .players_header {
+        padding-left: 4%;
+        padding-right: 40%;
+    }
+
+    .players_img {
+        right: 0;
+        top: 6%;
+    }
+
+    .athlets .text_block,
+    .players .text_block {
+        padding-bottom: 50px;
+    }
+
+    .text_block {
+        font-size: 1.6rem;
+    }
+
+    .middle_block {
+        font-size: 3.2rem;
+        margin-top: 42px;
+        margin-bottom: 20px;
+    }
+
+    .middle_block_1 {
+        margin-top: 32px;
+    }
+
+    .footer {
+        background-image: url('../images/footer_768.jpg');
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }
+
+    .footer_text {
+        font-size: 3.6rem;
+        text-align: center;
+        margin-bottom: 30%;
+    }
+
+    .footer_container::before {
+        top: -190px;
+        left: 39%;
+        width: 132px;
+        padding: 25px 14px 12px;
+        border-radius: 30px;
+    }
+}
+
+/*---------desktop*/
+
+@media (min-width: 961px) {
+	
+    .header {
+        
+    }
+
+    .header_logo_text {
+    }
+
+    .header_logo_text_1 {
+        
+    }
+    
+    .header_logo_text-2 {
+       text-align: right; 
+    }
+	
+	.buttons_header {
+		
+		
+	}
+	
+    .players_box {
+        padding: 3.6em 0;
+    }
+	
+    .athlets .big_block,
+    .players .big_block {
+        margin-top: 100px;
+    }
+
+	.athlets_block_header, .players_block_header {
+		margin-bottom: 1.8em;
+	}
+
+    .middle_block {
+       margin-bottom: 0.5em;
+    }
+	
+    .players_img {
+        top: -11%;
+		right: 6%;
+    }
+	
+	.athlets_block {
+		padding: 3.6em 0;
+	}
+
+    .text_block {
+        font-size: 1.4286rem;
+		margin-bottom: 0.5em;
+    }
+
+    .activity_block {
+        position: relative;
+    }
+
+    .activity_container {
+        position: static;
+    }
+
+    .activity_block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .activity_block:nth-child(even) .big_block,
+    .activity_block:nth-child(even) .text_block {
+        margin-left: 20%;
+    }
+
+    .activity_text_block .big_block {
+        margin-top: 25%;
+        margin-bottom: 10%;
+        margin-left: 130px;
+    }
+
+    .activity_text_block .text_block {
+        margin-left: 130px;
+        font-size: 2.4rem;
+        max-width: 538px;
+        font-size: 2.4rem;
+    }
+
+    .activity_number_box {
+        width: 170px;
+        height: 155px;
+        left: 45%;
+        top: 28.7%;
+    }
+
+    .footer {
+        background-image: url('../images/footer_1920.png');
+        padding-top: 12%;
+        padding-bottom: 3%;
+    }
+
+    .footer_container::before {
+        top: 5px;
+        left: -40px;
+        width: 132px;
+        padding: 25px 14px 12px;
+        border-radius: 30px;
+    }
+
+    .footer_container {
+        position: relative;
+        padding-left: 130px;
+    }
+
+    .footer_text {
+        font-size: 2.1429rem;
+    }
+}
